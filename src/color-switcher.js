@@ -1,6 +1,3 @@
-  
-import './css/common.css';
-
 const colors = [
   '#FFFFFF',
   '#2196F3',
@@ -14,7 +11,7 @@ const refs = {
 
     startBtn: document.querySelector('[data-action="start"]'),
     stopBtn: document.querySelector('[data-action="stop"]'),
-    body: document.querySelectory('body'),
+    body: document.querySelector('body'),
 };
 
 
@@ -46,7 +43,7 @@ const timer = {
         clearInterval(this.intervalId);
         this.isActive = false;
         refs.startBtn.disabled = false;
-    },
+    }
 };
 
 
